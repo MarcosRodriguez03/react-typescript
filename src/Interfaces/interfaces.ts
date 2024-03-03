@@ -1,12 +1,13 @@
 type astronaut = {
-    message: string;
-    people: [
-        {
-            name: string;
-            craft: string;
-        }
-    ]
-    number: number;
+    message: string,
+    crafts: AstronautInfo[],
+    number: number
 }
 
-export default astronaut
+
+type AstronautInfo = {
+    shipName: string,
+    members: string[]
+}
+
+export default astronaut;
